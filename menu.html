@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu makanan dan minuman</title>
+	<style type="text/css">
+		table{
+			margin-left:auto;margin-right:auto;margin-top:50px;
+		}
+
+		*{
+			background-color:	#E0FFFF;
+		}
+	</style>
+</head>
+<body>
+	<h3 align="center">Daftar menu makanan</h3>
+  <table border="1">
+
+  	<tr>
+  		<th>Gambar</th>
+  		<th>Makanan</th>
+  		<th>Harga</th>
+  		<th>Jumlah pesan</th>
+  	</tr>
+  	<tr>
+  		<td>
+  			<img src="sate.jpg" alt="" width="300px" height="200px">
+  		</td>
+  		<td>
+  			Sate ayam
+  		</td>
+  		<th> Rp 35.000</th>
+  		<th>
+  			<input type="text" name="menu">
+  		</th>
+  	</tr>
+  	<tr>
+  		<td>
+  			<img src="batagor.jpg" alt="" width="300px" height="200px">
+  		</td>
+  		<td>
+  			Batagor
+  		</td>
+  		<th> Rp 25.000</th>
+  		<th>
+  			<input type="text" name="menu">
+  		</th>
+  	</tr>
+  	<tr>
+  		<td>
+  			<img src="somay.jpg" alt="" width="300px" height="200px">
+  		</td>
+  		<td>
+  			somay
+  		</td>
+  		<th> Rp 20.000</th>
+  		<th>
+  			<input type="text" name="menu">
+  		</th>
+  	</tr>
+  	<tr>
+  		<td>
+  			<img src="bakmi.jpeg" alt="" width="300px" height="200px">
+  		</td>
+  		<td>
+  			Bakmi
+  		</td>
+  		<th> Rp 27.000</th>
+  		<th>
+  			<input type="text" name="menu">
+  		</th>
+  	</tr>
+  	<tr>
+  		<td>
+  			<img src="ayambakar.jpeg" alt="" width="300px" height="200px">
+  		</td>
+  		<td>
+  			Ayama bakar
+  		</td>
+  		<th> Rp 30.000</th>
+  		<th>
+  			<input type="text" name="menu">
+  		</th>
+  	</tr>
+  	<tr>
+  		<td>
+  			<img src="ikanbakar.jpg" alt="" width="300px" height="200px">
+  		</td>
+  		<td>
+  			Ikan Bakar
+  		</td>
+  		<th> Rp 35.000</th>
+  		<th>
+  			<input type="text" name="menu">
+  		</th>
+  	</tr>
+  </table>
+  <center><button  id="myButton">Pesan sekarang</button></center>
+  <script>
+  var button = document.getElementById("myButton");
+
+   // Adding an event listener
+  button.addEventListener("click", function() {
+    alert("Anda ingin memesan..?");
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <title>Halaman Login</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styleform.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<h2>Responsive Form</h2>
+<p>silahkan masukan daftar menu makanan dan nomor meja anda</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nama anda</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="masukan nama anda">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nomor meja</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="masukan nomor meja anda">
+      </div>
+    </div>
+    <div class="row" id="message" style="display: none; background: lightgreen;">Input nomor meja berhasil
+      
+    </div>
+    
+  </form>
+   <div style="float:right;">
+   <button id="btn-submit">Pesan</button>
+  </div>
+</div>
+  <script src="submit.js"></script>
+
+</body>
+</html>

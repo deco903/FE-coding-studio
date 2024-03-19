@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Halaman Login</title>
+        <link rel="stylesheet" href="stylelogin.css">
+    </head>
+   
+    <body>
+        <div class="container">
+          <h1>Login</h1>
+            <form action="" method="post" id="form-login">
+                <label>Username</label><br>
+                <input type="text"><br>
+                <label>Password</label><br>
+                <input type="password"><br>
+                <p id="feedback" style="color:red;"></p>
+                <button type="submit">Log in</button></br></br>
+                <button type="reset">clear</button>
+            </form>
+        </div>   
+        <script>
+             const formLogin = document.getElementById("form-login");
+    const feedbackMessage = document.getElementById("feedback");
+
+    // mendengarkan event submit pada form
+    formLogin.addEventListener("submit", function(event){
+      event.preventDefault();
+      const data = new FormData(event.target);
+      feedbackMessage.innerHTML = `Login dengan username <code>${data.get("username")}</code> dikirim!`;
+    });
+
+    // mendengarkan event reset pada form
+    formLogin.addEventListener("reset", function(){
+      feedbackMessage.textContent = "Form dibersihkan!";
+    });
+
+    
+        </script>  
+    </body>
+</html>
